@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.image-container {
+  background-image: url("path/to/your/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+ 
+}
+.image-container::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0, .4);
+
+}
+
+.image-text {
+  position: absolute;
+  z-index: 1; 
+  text-decoration: none;
+  padding: 7.9em;
+  color: whitesmoke;
+
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  
+}
+a:hover {
+  color: orange;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x:hidden ;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+
+  
+}
+h1,h2,h3,h4{
+  position: relative;
+  z-index: 1;
+}
+
+a.buttonP{
+  border-radius: 0px;
+  border: 1.5px solid black;
+  padding: .75em;
+  font-size: 1.2em;
+  font-weight: 350;
+  font-family: inherit;
+  cursor: pointer ;
+  transition: border-color 0.25s;
+  width: 20em;
+  height: 3.2em;
+  position: absolute;
+  z-index: 1;
+  background-color:rgba(255,0,0,.9);
+  text-align: center;
+  margin: 40px -200px 0px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+@media (max-width:768px) {
+  a.buttonP{
+    width: 20em;
+  }
+}
+.buttonP:hover {
+  background-color: red;
+  transform: scale(1.03);
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#center
+{
+display: block;
+ text-align: center;
+  padding: 0px;
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  position: relative;
+  margin:150px 0px 0px;
+  word-wrap: break-word;
+
+ 
+}
+#content{
+  color: white;
+  font-family: inherit ,sans-serif;
+  font-weight: 700;
+  max-width: 100%;
+  
+}
+h1#content{
+  font-size: 4.6em;
+  font-weight: 800;
+  
+}
+h2#content{
+  font-size: 2em;
+  
+}

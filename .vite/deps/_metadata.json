@@ -1,0 +1,32 @@
+{
+  "hash": "1e7f69c5",
+  "browserHash": "859df03a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "679bcf9f",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "962762f4",
+      "needsInterop": true
+    },
+    "aws-amplify": {
+      "src": "../../node_modules/aws-amplify/lib-esm/index.js",
+      "file": "aws-amplify.js",
+      "fileHash": "b360ce58",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UOIPVTYB": {
+      "file": "chunk-UOIPVTYB.js"
+    },
+    "chunk-AUZ3RYOM": {
+      "file": "chunk-AUZ3RYOM.js"
+    }
+  }
+}

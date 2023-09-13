@@ -1,0 +1,48 @@
+ 
+
+#info-page{
+    min-height:500px;
+    background-color: cornflowerblue;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+   align-items: center;
+   justify-content: center;
+   font-weight: 900;
+   color: whitesmoke;
+   font-family:  sans-serif;
+  
+}
+.info{
+    padding-left: 5em;
+   padding-top: 1em;
+}
+h1{
+    font-size: 1.5em;
+}
+span,h1, h2,h3,h4,p{
+    text-align: center;
+    max-width: 90%;
+
+   
+}
+p{ padding: 1.5em;
+ 
+    font-size: 1.5em;
+}
+div{
+    width:  100%;
+}
+.wrap{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+p a{
+    text-decoration: none;
+    color: whitesmoke;
+   
+}
+
+
+
+
