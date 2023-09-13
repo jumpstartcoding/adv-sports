@@ -1,6 +1,5 @@
 import Image from "../images/advMain.jpeg";
 import "../components/Trips.css";
-import { useState } from "react";
 
 function Trips() {
   const trips = ["One Day Trips", "Two Day Trips", "Three Day Trips"];
@@ -10,7 +9,6 @@ function Trips() {
     "Three Day Trips",
     "Four Day Trips",
   ];
-  let [siz, setSiz] = useState(500);
 
   return (
     <>
