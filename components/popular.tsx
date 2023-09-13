@@ -1,4 +1,4 @@
-import "../components/Popular.css";
+import "../components/popular.css";
 import smithImage from "../images/smith.jpeg";
 
 function popular() {
