@@ -3,7 +3,7 @@ import logoImage from "../images/adv.png";
 import "../src/index.css";
 import axios from "axios";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function NavBar() {
   const [name, setName] = useState("");
@@ -28,7 +28,7 @@ function NavBar() {
       <nav
         className="navbar navbar-expand-lg image-text"
         data-bs-theme="light"
-        style={{ top: "10px", left: "10px", position: "relative" }}
+        style={{ position: "relative" }}
       >
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">

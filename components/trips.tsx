@@ -33,8 +33,11 @@ function Trips() {
                   backgroundImage: `url(${Image})`,
                 }}
               >
-                <a className="image-text" href="">
-                  <h2>
+                <a href="">
+                  <h2
+                    className="mx-auto "
+                    style={{ padding: "3em", color: "whitesmoke" }}
+                  >
                     <strong>{name}</strong>
                   </h2>
                 </a>
@@ -72,8 +75,8 @@ function Trips() {
             }}
             key={name}
           >
-            <a className=" image-text  " href="">
-              <h2>
+            <a href="">
+              <h2 style={{ padding: "3em", color: "whitesmoke" }}>
                 <strong>{name}</strong>
               </h2>
             </a>
