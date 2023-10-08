@@ -7,6 +7,7 @@ import Contact from "../components/contact";
 import Trips from "../components/trips";
 import InfoPage from "../components/info";
 import Popular from "../components/popular";
+import React from "react";
 
 const router = createBrowserRouter([
   {
