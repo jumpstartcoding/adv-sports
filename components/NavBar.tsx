@@ -1,8 +1,7 @@
 import logoImage from "../images/adv.png";
 import "../src/index.css";
-import axios from "axios";
-import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+
+import { Outlet } from "react-router-dom";
 const up = "nv";
 
 function NavBar() {
