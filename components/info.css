@@ -3,6 +3,8 @@
 #info-page{
    min-height: 100vh;
     background-color: cornflowerblue;
+    display: flex;
+ 
     position: relative;
     z-index: 1;
     width: 100%;
@@ -11,6 +13,7 @@
    font-weight: 900;
    color: whitesmoke;
    font-family:  sans-serif;
+   overflow: hidden;
   
 }
 .info{
@@ -42,7 +45,4 @@ p a{
     color: whitesmoke;
    
 }
-
-
-
 

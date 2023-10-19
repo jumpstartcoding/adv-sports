@@ -1,67 +1,99 @@
-
-.main
-{ display: grid;
-grid-template-columns: repeat(2,1fr);
-background-color: whitesmoke;
-width: 100%;
-height: 50em;
-z-index: 1;
-position: relative;
-
-}
-
-.colOne
-{
-padding-top: 100px;
- grid-column: 1;
-width: 100%;
-
-}
-.colTwo
-{
- grid-column: 2;
- background-color: black;
- margin-top: 10em;
- height: 30em;
-
-}
-
-.button1{
+/* Common styles for both desktop and mobile */
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: whitesmoke;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+   
+  }
+  
+  .colOne {
+    grid-column: 1;
+    padding: 1.5em;
+    align-items: left;
+  }
+  
+  .colTwo {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .colTwo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+  
+    .colTwo {
+      grid-column: 1;
+      margin-top: 20px;
+    }
+  
+    .colTwo img {
+      padding: 1em 0;
+    }
+  
+  
+    /* Adjust the button size for mobile */
+    .button1 {
+      font-size: 1.2em;
+      padding: 0.3em 0.6em;
+    }
+  }
+  
+  
+  /* Button and text styles */
+  .button1 {
     background-color: red;
     margin: 1em;
     border-radius: 30px;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
-    padding: 10px;
-}
-
-
-.bold{
-    font-weight: 600;
+    padding: 0.5em 1em;
+    justify-content: center; /* Center the content horizontally and vertically */
+  }
   
-}
-.bolder{
-    font-weight: 801;
-   
-}
-
-
-.itemH
-{
+  .bold {
+    font-weight: 600;
+  }
+  
+  .bolder {
+    font-weight: 800;
+  }
+  
+  .itemH {
     display: inline;
-    margin: .5em;
+    margin: 0.5em;
+   
     background-color: red;
     font-weight: 600;
     color: white;
-    padding: .1em;
-   
+    padding: 0.5em;
     
-}
-.flex{
+  }
+  
+  /* Flex container for better text layout */
+  .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- 
-    
-}
+    flex-direction: column;
+  }
+  
+  .title {
+    text-align: center;
+    top: 1em;
+   font-size: xx-large;
+  }
+  

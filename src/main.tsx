@@ -8,6 +8,7 @@ import Trips from "../components/trips";
 import InfoPage from "../components/info";
 import Popular from "../components/popular";
 import React from "react";
+import NavBar from "../components/NavBar";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
   {
     path: "infopage",
     element: <InfoPage />,
+    children: [
+      {
+        path: "",
+        element: [<NavBar />],
+      },
+    ],
   },
 ]);
 

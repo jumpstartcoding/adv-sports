@@ -4,13 +4,11 @@ import Image from "../images/advMain.jpeg";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
 import NavBar from "../components/NavBar";
-import { Link, useOutletContext, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 Amplify.configure(awsExports);
 
 function App() {
-  const up = useOutletContext();
-
   return (
     <>
       <div

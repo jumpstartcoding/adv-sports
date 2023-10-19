@@ -73,6 +73,7 @@ a {
     margin: 50px ;
     border-radius: 30px;
     display: inline-block;
+
    
     }
     .container{
@@ -90,6 +91,7 @@ a {
         z-index: 1;
         height: fit-content;
         
+        
 
     }
 
@@ -104,7 +106,9 @@ a {
     position: relative;
     border: 1px solid ;
     margin: 10px;
-  
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
     
 }
 
@@ -130,6 +134,9 @@ a {
         height: 300px;
         border-radius: 25px 25px 0px 0px ;
         backface-visibility: hidden;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
        
     }
     @keyframes spin{

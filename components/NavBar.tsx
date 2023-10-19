@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg image-text bg-body-tertiary"
+        className="navbar  navbar-expand-lg image-text bg-body-tertiary"
         data-bs-theme="dark"
         style={{
           position: "fixed",
