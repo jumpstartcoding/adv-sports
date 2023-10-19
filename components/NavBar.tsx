@@ -1,16 +1,18 @@
 import logoImage from "../images/adv.png";
 import "../src/index.css";
 
-import { Outlet } from "react-router-dom";
-const up = "nv";
-
 function NavBar() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg image-text"
-        data-bs-theme="light"
-        style={{ position: "relative" }}
+        className="navbar navbar-expand-lg image-text bg-body-tertiary"
+        data-bs-theme="dark"
+        style={{
+          position: "fixed",
+          zIndex: "2",
+          opacity: ".8",
+          width: "100%",
+        }}
       >
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -43,7 +45,6 @@ function NavBar() {
           </div>
         </div>
       </nav>
-      <Outlet context={up} />
     </>
   );
 }

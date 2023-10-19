@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../components/NavBar";
+
 import Contact from "../components/contact";
 import Trips from "../components/trips";
 import InfoPage from "../components/info";
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: [<NavBar />, <Trips />, <Contact />, <Popular />],
+        element: [<Trips />, <Contact />, <Popular />],
       },
     ],
   },

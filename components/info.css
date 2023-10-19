@@ -1,7 +1,7 @@
  
 
 #info-page{
-    min-height:500px;
+   min-height: 100vh;
     background-color: cornflowerblue;
     position: relative;
     z-index: 1;

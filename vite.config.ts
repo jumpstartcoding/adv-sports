@@ -8,6 +8,7 @@ export default defineConfig({
       {
         find: './runtimeConfig',
         replacement: './runtimeConfig.browser',
+        
       },
     ]
   },

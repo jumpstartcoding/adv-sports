@@ -3,6 +3,7 @@ import "../src/index.css";
 import Image from "../images/advMain.jpeg";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
+import NavBar from "../components/NavBar";
 import { Link, useOutletContext, Outlet } from "react-router-dom";
 
 Amplify.configure(awsExports);
@@ -12,7 +13,6 @@ function App() {
 
   return (
     <>
-      I am using the {up} outlet.
       <div
         className="image-container"
         style={{
@@ -21,6 +21,7 @@ function App() {
           zIndex: 1,
         }}
       ></div>
+      <NavBar />
       <div id="center">
         <h1 id="content">Adventure Sports</h1>
         <h2 id="content">
