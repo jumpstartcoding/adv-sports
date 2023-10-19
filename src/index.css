@@ -102,6 +102,9 @@ a.buttonP{
     width: 80%;
     margin-bottom: 3em;
   }
+ #center{font-size: .7em;
+
+ }
 }
 
 .buttonP:hover {
@@ -129,6 +132,7 @@ justify-content: center;
   z-index: 1;
   position: relative;
   margin:150px 0px 0px;
+
   word-wrap: break-word;
 
 
@@ -143,7 +147,7 @@ justify-content: center;
 }
 h1#content{
   font-size: 4.6em;
-  font-weight: 800;
+  font-weight: 650;
   
 }
 h2#content{

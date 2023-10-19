@@ -112,7 +112,7 @@ a {
     
 }
 
-.mycard:hover,.jcard:hover{
+.spin{
         transform: scale(1.03);
         cursor: pointer;
         transition: all .75s ease;
@@ -141,7 +141,8 @@ a {
     }
     @keyframes spin{
         50%{transform: rotateY(180deg); }
-        50%{transform: rotateY(180deg);}
+        
+    
     }
     .mycard::before{
        

@@ -1,5 +1,5 @@
 import "../components/popular.css";
-import smithImage from "../images/smith.jpeg";
+import smithImage from "../images/smith.jpg";
 
 function popular() {
   return (
