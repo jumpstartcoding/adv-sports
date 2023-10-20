@@ -19,7 +19,7 @@ function Trips() {
             key={name}
           >
             <a href="">
-              <h2 style={{ padding: "3em", color: "whitesmoke" }}>
+              <h2 style={{ margin: "5%", color: "whitesmoke" }}>
                 <strong>{name}</strong>
               </h2>
             </a>
