@@ -9,7 +9,7 @@ border-radius: 0px;}
     overflow-y:hidden;
     display: flex;
     align-items: center;
-    border: 3px solid whitesmoke;
+
 
     
 }
@@ -38,8 +38,10 @@ border-radius: 0px;}
         width: 1em;
         height: 1em;
     }
-    #trips{
-        padding: 100px;
+    .bar{ border-bottom:2px solid #000 ;
+        width: 100%;
+       bottom: 10px;
+      
     }
   }
 
@@ -52,6 +54,7 @@ border-radius: 0px;}
    display: flex;
    flex-wrap: wrap;
     height: 45em;
+
     
 }
 
@@ -87,7 +90,7 @@ a {
         min-width: 25em;
         background-color: whitesmoke;
         justify-content: center;
-        border-radius: 25px  25px;
+        border-radius: 25px 25px;
         z-index: 1;
         height: fit-content;
         

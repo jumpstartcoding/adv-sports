@@ -26,7 +26,7 @@ function App() {
           Canoeing, Kayaking, and Rafting Trips on the <br />
           Delaware River
         </h2>
-        <Link to="infopage" className="buttonP">
+        <Link to="trips" className="buttonP">
           <strong>Find Your Adventure</strong>
         </Link>
       </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../components/contact.css";
 function Contact() {
   return (
@@ -36,7 +37,7 @@ function Contact() {
               <h1 id="font">Resources</h1>
             </li>
             <li>
-              <a href="/home">Home</a>
+              <Link to="../">Home</Link>
             </li>
             <li>
               <a href="">About</a>

@@ -2,13 +2,20 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-
+import TripsPage from "../components/tripsPage";
 import Contact from "../components/contact";
 import Trips from "../components/trips";
 import InfoPage from "../components/info";
 import Popular from "../components/popular";
 import React from "react";
 import NavBar from "../components/NavBar";
+
+const mytrips = [
+  "One Day Trips",
+  "Two Day Trips",
+  "Three Day Trips",
+  "Four Day Trips",
+];
 
 const router = createBrowserRouter([
   {
@@ -17,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: [<Trips />, <Contact />, <Popular />],
+        element: [<Trips />, <Popular />, <Contact />],
       },
     ],
   },
@@ -28,6 +35,16 @@ const router = createBrowserRouter([
       {
         path: "",
         element: [<NavBar />],
+      },
+    ],
+  },
+  {
+    path: "trips",
+    element: [<NavBar />, <TripsPage trips={mytrips} />],
+    children: [
+      {
+        path: "",
+        element: [<Contact />],
       },
     ],
   },

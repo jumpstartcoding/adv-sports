@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoImage from "../images/adv.png";
 import "../src/index.css";
 
@@ -26,21 +27,23 @@ function NavBar() {
                 />
               </a>
 
-              <a className="nav-link " aria-current="page" href="#">
+              <Link className="nav-link " aria-current="page" to="../">
                 Home
-              </a>
+              </Link>
 
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="../trips" relative="path">
                 Featured Trips
-              </a>
+              </Link>
               <a className="nav-link disabled">Rates</a>
-              <a className="nav-link disabled">Contact</a>
-              <a
+              <a href="#container" className="nav-link ">
+                Contact
+              </a>
+              <Link
                 className="nav-link"
-                href="https://weather.com/weather/today/l/734da858180d93b7b4ba2ee99b7cf2809c97f1425cc5c3b4478b2822cebe6fa4"
+                to="https://weather.com/weather/today/l/734da858180d93b7b4ba2ee99b7cf2809c97f1425cc5c3b4478b2822cebe6fa4"
               >
                 <span>&#9728;</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

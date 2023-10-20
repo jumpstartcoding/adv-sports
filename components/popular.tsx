@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../components/popular.css";
 import smithImage from "../images/smith.jpg";
 
@@ -18,9 +19,9 @@ function popular() {
             Smithfield Beach launch, down to the famous Delaware Water Gap.
             Rafts are available as well!
           </p>
-          <a className="button1 " href="infopage">
+          <Link className="button1 " to="infopage">
             Learn More
-          </a>
+          </Link>
         </div>
 
         <div className="colTwo">

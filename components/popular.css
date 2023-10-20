@@ -6,6 +6,7 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    top: 25px;
    
   }
   
@@ -20,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   
   .colTwo img {
@@ -27,21 +29,27 @@
     height: auto;
     display: block;
     padding: 1em;
+   
   }
   
   @media (max-width: 768px) {
     .main {
+      grid-template-rows: 1fr;
       grid-template-columns: 1fr;
     }
   
     .colTwo {
+      grid-row: 1;
+      margin-top: -17px;
       grid-column: 1;
-      margin-top: 20px;
+
     }
   
     .colTwo img {
-      padding: 1em 0;
+      padding: 1em 0 0;
+   
     }
+
   
   
     /* Adjust the button size for mobile */
