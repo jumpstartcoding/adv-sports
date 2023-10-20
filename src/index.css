@@ -78,7 +78,6 @@ h1,h2,h3,h4{
 }
 
 a.buttonP{
-  border-radius: 0px;
   border: 1.5px solid black;
   padding: .75em;
   font-size: 1.2em;
@@ -94,12 +93,14 @@ a.buttonP{
   color: whitesmoke;
   margin-left: auto;
   margin-right: auto;
+  top:2em;
   
 }
 
 @media (max-width:768px) {
   a.buttonP{
     width: 80%;
+  
     margin-bottom: 3em;
   }
  #center{font-size: .7em;

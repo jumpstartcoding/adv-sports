@@ -7,7 +7,8 @@
     position: relative;
     z-index: 1;
     top: 25px;
-   
+    padding: 25px;
+    
   }
   
   .colOne {
@@ -36,6 +37,7 @@
     .main {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr;
+      padding: 0px;
     }
   
     .colTwo {
