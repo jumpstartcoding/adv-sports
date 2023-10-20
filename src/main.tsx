@@ -9,6 +9,7 @@ import InfoPage from "../components/info";
 import Popular from "../components/popular";
 import React from "react";
 import NavBar from "../components/NavBar";
+import TripOneImg from "../images/raft-group-2.jpg";
 
 const oneDayTrips = {
   "Smithfield to the Delaware Water Gap":
@@ -42,7 +43,10 @@ const router = createBrowserRouter([
   },
   {
     path: "trips",
-    element: [<NavBar />, <TripsPage trips={oneDayTrips} />],
+    element: [
+      <NavBar />,
+      <TripsPage trips={oneDayTrips} pageImage={TripOneImg} />,
+    ],
     children: [
       {
         path: "",

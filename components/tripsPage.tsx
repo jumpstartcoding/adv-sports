@@ -4,9 +4,28 @@ import Image from "../images/advMain.jpeg";
 
 function displayTrips(props: {
   trips: { [s: string]: string } | ArrayLike<string>;
+  pageImage: string;
 }) {
   return (
     <>
+      <div
+        className="image-container"
+        style={{
+          backgroundImage: `url(${props.pageImage})`,
+          position: "fixed",
+          zIndex: 1,
+        }}
+      ></div>
+      <div id="center">
+        <h1 id="content">One Day Trips</h1>
+        <h2 id="content">
+          Our one-day river trips are perfect for those looking to get out on
+          the water and enjoy the beauty of the Delaware Water Gap National
+          Recreation Area. We have options for canoeing, kayaking, and rafting,
+          all of which are great for both friend and family adventures.
+        </h2>
+      </div>
+
       <div id="colo" style={{ backgroundColor: "#fbe3e8" }}>
         <h1
           className="bar"
