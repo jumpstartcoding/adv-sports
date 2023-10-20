@@ -10,12 +10,14 @@ import Popular from "../components/popular";
 import React from "react";
 import NavBar from "../components/NavBar";
 
-const mytrips = [
-  "One Day Trips",
-  "Two Day Trips",
-  "Three Day Trips",
-  "Four Day Trips",
-];
+const oneDayTrips = {
+  "Smithfield to the Delaware Water Gap":
+    "Take a quick canoe or kayak trip down the Delaware River from the Smithfield Beach launch, down to the famous Delaware Water Gap. Rafts are available as well!",
+  "Bushkill to Smithfield Beach":
+    "Join us for a beautiful day trip canoeing or kayaking down the Delaware River from the Bushkill boat launch, all the way to the Smithfield Beach.",
+  "Bushkill to Delaware Water Gap – 1 Day":
+    "Join us for a beautiful one- or two-day trip down the Delaware River from Lehman Township, PA all the way to the Delaware Water Gap, PA. Book your adventure online.",
+};
 
 const router = createBrowserRouter([
   {
@@ -40,7 +42,7 @@ const router = createBrowserRouter([
   },
   {
     path: "trips",
-    element: [<NavBar />, <TripsPage trips={mytrips} />],
+    element: [<NavBar />, <TripsPage trips={oneDayTrips} />],
     children: [
       {
         path: "",

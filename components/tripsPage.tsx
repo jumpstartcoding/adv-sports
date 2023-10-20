@@ -2,7 +2,9 @@ import { Outlet } from "react-router-dom";
 import "../components/Trips.css";
 import Image from "../images/advMain.jpeg";
 
-function displayTrips(props: { trips: any[] }) {
+function displayTrips(props: {
+  trips: { [s: string]: string } | ArrayLike<string>;
+}) {
   return (
     <>
       <div id="colo" style={{ backgroundColor: "#fbe3e8" }}>
@@ -19,7 +21,7 @@ function displayTrips(props: { trips: any[] }) {
           <strong> Canoe, Kayak or Raft</strong>
         </h1>
         <section id="trips">
-          {props.trips.map((name) => (
+          {Object.entries(props.trips).map(([name, val]) => (
             <div className="jcard" key={name}>
               <div
                 className="acard"
@@ -42,11 +44,7 @@ function displayTrips(props: { trips: any[] }) {
                   id="back"
                   style={{ fontFamily: "copperplate", fontSize: 18 }}
                 >
-                  <strong>
-                    Take a quick canoe or kayak trip down the Delaware River
-                    from the Smithfield Beach launch, down to the famous
-                    Delaware Water Gap. Rafts are available as well!
-                  </strong>
+                  <strong>{val}</strong>
                 </p>
 
                 <a className="button">
