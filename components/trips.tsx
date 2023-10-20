@@ -6,6 +6,9 @@ function Trips() {
 
   return (
     <>
+      <h1 className="title" style={{ color: "whitesmoke", margin: "25px" }}>
+        <strong>View All Our Trips</strong>
+      </h1>
       <section id="mytrips">
         {trips.map((name) => (
           <div

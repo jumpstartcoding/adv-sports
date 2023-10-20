@@ -78,7 +78,7 @@ h1,h2,h3,h4{
 }
 
 a.buttonP{
-  border: 1.5px solid black;
+
   padding: .75em;
   font-size: 1.2em;
   font-weight: 350;
@@ -133,7 +133,7 @@ justify-content: center;
   height: 15.6em;
   z-index: 1;
   position: relative;
-  margin:150px 0px 0px;
+  margin:150px 0px;
 
   word-wrap: break-word;
 

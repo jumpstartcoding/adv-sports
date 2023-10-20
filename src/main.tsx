@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: [<Trips />, <Popular />, <Contact />],
+        element: [<Popular />, <Trips />, <Contact />],
       },
     ],
   },
