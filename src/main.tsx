@@ -9,7 +9,7 @@ import InfoPage from "../components/info";
 import Popular from "../components/popular";
 import React from "react";
 import NavBar from "../components/NavBar";
-import TripOneImg from "../images/raft.jpg";
+import TripOneImg from "../images/rafts.jpg";
 
 const oneDayTrips = {
   "Smithfield to the Delaware Water Gap":
