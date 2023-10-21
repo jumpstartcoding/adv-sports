@@ -19,9 +19,10 @@
 }
 
 .image-container {
-  background-image: url('../images/homePageImg.jpg');
+  background-image: url('../images/homePageImg.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  position: fixed;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -35,7 +36,9 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+
 background-color: rgba(0,0,0, .4);
+
 
 }
 
@@ -99,6 +102,9 @@ a.buttonP{
 }
 
 @media (max-width:768px) {
+  .image-container{
+
+  }
   a.buttonP{
     width: 80%;
   
