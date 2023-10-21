@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import "../components/Trips.css";
-import Image from "../images/advMain.jpeg";
+import Image from "../images/advMain.jpg";
 
 function displayTrips(props: {
   trips: { [s: string]: string } | ArrayLike<string>;
@@ -16,9 +16,9 @@ function displayTrips(props: {
           zIndex: 1,
         }}
       ></div>
-      <div id="center">
+      <div id="center" style={{ padding: "6.25em" }}>
         <h1 id="content">One Day Trips</h1>
-        <h2 id="content">
+        <h2 id="content" style={{ paddingTop: "1.5em" }}>
           Our one-day river trips are perfect for those looking to get out on
           the water and enjoy the beauty of the Delaware Water Gap National
           Recreation Area. We have options for canoeing, kayaking, and rafting,

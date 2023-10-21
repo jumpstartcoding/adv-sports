@@ -6,11 +6,12 @@ function popular() {
   return (
     <>
       <section className="main">
-        <div className="colOne">
+        <div className="colOne center">
           <ul>
             <li className="itemH">RAFT OPTION!</li>
             <li className="itemH">MOST POPULAR!</li>
           </ul>
+
           <h1 className="bolder title">
             Smithfield Beach to Delaware Water Gap
           </h1>
