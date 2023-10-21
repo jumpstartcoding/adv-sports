@@ -1,6 +1,5 @@
 import "./App.css";
 import "../src/index.css";
-import Image from "../images/advMain.jpeg";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
 import NavBar from "../components/NavBar";
