@@ -37,7 +37,14 @@ function Contact() {
               <h1 id="font">Resources</h1>
             </li>
             <li>
-              <Link to="../">Home</Link>
+              <Link
+                to="../"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                Home
+              </Link>
             </li>
             <li>
               <a href="">About</a>

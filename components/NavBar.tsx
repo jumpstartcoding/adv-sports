@@ -27,11 +27,24 @@ function NavBar() {
                 />
               </a>
 
-              <Link className="nav-link " aria-current="page" to="../">
+              <Link
+                className="nav-link "
+                aria-current="page"
+                to="../"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
                 Home
               </Link>
 
-              <Link className="nav-link" to="../trips" relative="path">
+              <Link
+                className="nav-link"
+                to="../trips"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
                 Featured Trips
               </Link>
               <a className="nav-link disabled">Rates</a>

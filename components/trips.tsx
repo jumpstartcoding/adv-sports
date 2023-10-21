@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../components/Trips.css";
 
 function Trips() {
@@ -11,11 +12,16 @@ function Trips() {
       <section id="mytrips">
         {trips.map((name) => (
           <div className="mycard" key={name}>
-            <a href="">
+            <Link
+              to="trips"
+              onClick={() => {
+                window.scroll(0, 0);
+              }}
+            >
               <h2 style={{ margin: "5%", color: "whitesmoke" }}>
                 <strong>{name}</strong>
               </h2>
-            </a>
+            </Link>
           </div>
         ))}
       </section>
