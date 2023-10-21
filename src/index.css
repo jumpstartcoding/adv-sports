@@ -19,7 +19,7 @@
 }
 
 .image-container {
-  background-image: url('../images/homePageImg.jpeg');
+  background-image: url('../images/homePageImg.jpg');
   background-size: cover;
   background-position: center center;
   position: fixed;
