@@ -14,7 +14,6 @@ function App() {
       <div
         className="image-container"
         style={{
-          backgroundImage: `url(images/advMain.jpeg)`,
           position: "fixed",
           zIndex: 1,
         }}

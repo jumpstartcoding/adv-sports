@@ -1,4 +1,3 @@
-import Image from "../images/advMain.jpeg";
 import "../components/Trips.css";
 
 function Trips() {
@@ -11,13 +10,7 @@ function Trips() {
       </h1>
       <section id="mytrips">
         {trips.map((name) => (
-          <div
-            className="mycard"
-            style={{
-              backgroundImage: `url(${Image})`,
-            }}
-            key={name}
-          >
+          <div className="mycard" key={name}>
             <a href="">
               <h2 style={{ margin: "5%", color: "whitesmoke" }}>
                 <strong>{name}</strong>
