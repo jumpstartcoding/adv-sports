@@ -12,12 +12,7 @@ function Trips() {
       <section id="mytrips">
         {trips.map((name) => (
           <div className="mycard" key={name}>
-            <Link
-              to="trips"
-              onClick={() => {
-                window.scroll(0, 0);
-              }}
-            >
+            <Link to="trips" preventScrollReset={false}>
               <h2 style={{ margin: "5%", color: "whitesmoke" }}>
                 <strong>{name}</strong>
               </h2>

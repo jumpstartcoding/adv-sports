@@ -10,6 +10,7 @@ import Popular from "../components/popular";
 import React from "react";
 import NavBar from "../components/NavBar";
 import TripOneImg from "../images/rafts.jpg";
+import ScrollToTop from "../components/ScrollToTop";
 
 const oneDayTrips = {
   "Smithfield to the Delaware Water Gap":
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: [<Popular />, <Trips />, <Contact />],
+        element: [<Popular />, <Trips />, <Contact />, <ScrollToTop />],
       },
     ],
   },
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: [<NavBar />],
+        element: [<NavBar />, <ScrollToTop />],
       },
     ],
   },
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: [<Contact />],
+        element: [<Contact />, <ScrollToTop />],
       },
     ],
   },

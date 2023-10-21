@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import logoImage from "../images/adv.png";
 import "../src/index.css";
 
 function NavBar() {
+  const location = useLocation();
   return (
     <>
       <nav
@@ -27,26 +28,23 @@ function NavBar() {
                 />
               </a>
 
-              <Link
+              <NavLink
                 className="nav-link "
-                aria-current="page"
                 to="../"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
+                aria-current={location.pathname === "../" ? "page" : undefined}
               >
                 Home
-              </Link>
+              </NavLink>
 
-              <Link
+              <NavLink
                 className="nav-link"
                 to="../trips"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
+                aria-current={
+                  location.pathname === "../trips" ? "page" : undefined
+                }
               >
                 Featured Trips
-              </Link>
+              </NavLink>
               <a className="nav-link disabled">Rates</a>
               <a href="#container" className="nav-link ">
                 Contact

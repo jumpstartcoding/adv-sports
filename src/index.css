@@ -102,9 +102,6 @@ a.buttonP{
 }
 
 @media (max-width:768px) {
-  .image-container{
-
-  }
   a.buttonP{
     width: 80%;
   
