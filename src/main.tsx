@@ -11,7 +11,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import TripOneImg from "../images/rafts.jpg";
 import ScrollToTop from "../components/ScrollToTop";
-
+import Reservations from "../components/reservations";
 const oneDayTrips = {
   "Smithfield to the Delaware Water Gap":
     "Take a quick canoe or kayak trip down the Delaware River from the Smithfield Beach launch, down to the famous Delaware Water Gap. Rafts are available as well!",
@@ -24,7 +24,7 @@ const oneDayTrips = {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App children={undefined} />,
     children: [
       {
         path: "",
@@ -35,6 +35,16 @@ const router = createBrowserRouter([
   {
     path: "infopage",
     element: <InfoPage />,
+    children: [
+      {
+        path: "",
+        element: [<NavBar />, <ScrollToTop />],
+      },
+    ],
+  },
+  {
+    path: "reservations",
+    element: [<Reservations />, <Contact />],
     children: [
       {
         path: "",
