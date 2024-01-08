@@ -66,14 +66,13 @@ export const ResInput = () => {
     <>
       <h1 className="resTitle">Boat Adventure Reservation</h1>
       <Flex
-        id=""
         as="form"
         direction="column"
         className="form"
         onSubmit={handleSubmit}
       >
         <Flex direction="column">
-          <Label display="block" htmlFor="resDate">
+          <Label display="block" htmlFor="date">
             Select a Date
           </Label>
           <Input
