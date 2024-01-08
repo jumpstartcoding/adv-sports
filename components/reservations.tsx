@@ -1,22 +1,25 @@
-import { LocalizationProvider } from "@mui/x-date-pickers";
-import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
-
-import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { Outlet } from "react-router-dom";
 import { ResInput } from "../components/resForm";
+
 function reservations() {
   return (
     <>
       <Outlet />
-      <section></section>
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <div
-          style={{ marginTop: "25px", padding: "10px", textAlign: "center" }}
-        >
-          <StaticDatePicker />
-        </div>
-      </LocalizationProvider>
-      <ResInput />
+      <div
+        style={{
+          margin: "75px",
+          width: "auto",
+          border: "1px solid #ccc",
+          padding: "100px",
+          boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <ResInput />
+      </div>
     </>
   );
 }

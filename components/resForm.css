@@ -1,9 +1,60 @@
-input{
-    width: 40%;
-    background-color:whitesmoke;
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 4px;
     color: black;
-}
-.form{ width:100%;
+  
+    
+   
+  }
+  Label{font-weight: 600;
+
+  }
+.form{ width: 75%;
+   
     text-align:center;
     margin:10px auto;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+/* Button Styles */
+Button {
+    margin: 10px 0px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #0272e1; /* Border color */
+    color: #ffffff; /* Text color */
+    background-color: #0272e1; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  
+    /* Optional: Add more styles as needed */
+  }
+  
+  /* Hover State */
+  Button:hover {
+    background-color: #0466c8; /* Darker background color on hover */
+    border-color: #0466c8; /* Darker border color on hover */
+  }
+  
+
+.highlight-on-hover:hover {
+    background-color: #0272e1; /* Brighter blue for hover */
+    color: whitesmoke; /* Change text color when hovered over */
+    /* Add other styles as needed */
+  }
+  .resTitle{
+    font-weight: 800;
+    font-size: 2em;
+   
+  
+  }

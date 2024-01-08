@@ -5,7 +5,7 @@ interface Props {
   children?: ReactNode;
 }
 function ListGroup({ children }: Props) {
-  let name = ["tom", "line", "bear"];
+  let name = ["30", "00", "22"];
   let myList = [name, ["dsd", "dsfsdsd", "csdcs", "cd"]];
   const getMesage = (msg: string) => {
     return name.length === 0 && <p>{msg}</p>;

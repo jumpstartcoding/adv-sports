@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "../components/Trips.css";
 import Image from "../images/advMain.jpg";
 
@@ -66,9 +66,9 @@ function displayTrips(props: {
                   <strong>{val}</strong>
                 </p>
 
-                <a className="button">
+                <Link className="button" to="/reservations">
                   <strong>Book Now</strong>
-                </a>
+                </Link>
                 <a className="button" id="noColor">
                   <strong>Learn More</strong>
                 </a>
