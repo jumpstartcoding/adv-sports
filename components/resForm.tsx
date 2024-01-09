@@ -63,9 +63,9 @@ export const ResInput = () => {
 
   return (
     <>
-      <Flex as="form" direction="column" onSubmit={handleSubmit}>
-        <h1 className="resTitle">Boat Adventure Reservation</h1>
-        <Flex direction="column" className="form">
+      <Flex className="form" as="form" onSubmit={handleSubmit}>
+        <section style={{ display: "flex", flexDirection: "column" }}>
+          <h1 className="resTitle">Boat Adventure Reservation</h1>
           <Label display="block" htmlFor="date">
             Select a Date
           </Label>
@@ -78,7 +78,7 @@ export const ResInput = () => {
           />
 
           <Label display="block" htmlFor="selectedTime">
-            Selected Time
+            Select a Time
           </Label>
           <div style={{ position: "relative" }}>
             <Input
@@ -158,7 +158,7 @@ export const ResInput = () => {
             isRequired={true}
             onChange={handleChange}
           />
-        </Flex>
+        </section>
         <Button variation="primary" type="submit">
           Submit
         </Button>
