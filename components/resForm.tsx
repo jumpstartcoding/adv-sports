@@ -64,7 +64,14 @@ export const ResInput = () => {
   return (
     <>
       <Flex className="form" as="form" onSubmit={handleSubmit}>
-        <section style={{ display: "flex", flexDirection: "column" }}>
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
           <h1 className="resTitle">Boat Adventure Reservation</h1>
           <Label display="block" htmlFor="date">
             Select a Date
