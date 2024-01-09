@@ -10,7 +10,6 @@ function reservations() {
           margin: "75px",
           width: "auto",
           border: "1px solid #ccc",
-          padding: "100px",
           boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
           display: "flex",
           alignItems: "center",

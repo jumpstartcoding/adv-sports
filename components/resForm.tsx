@@ -15,7 +15,6 @@ export const ResInput = () => {
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
-    console.log("aHAH", name, typeof value);
     setFormData({
       ...formData,
       [name]: value,
@@ -64,14 +63,9 @@ export const ResInput = () => {
 
   return (
     <>
-      <h1 className="resTitle">Boat Adventure Reservation</h1>
-      <Flex
-        as="form"
-        direction="column"
-        className="form"
-        onSubmit={handleSubmit}
-      >
-        <Flex direction="column">
+      <Flex as="form" direction="column" onSubmit={handleSubmit}>
+        <h1 className="resTitle">Boat Adventure Reservation</h1>
+        <Flex direction="column" className="form">
           <Label display="block" htmlFor="date">
             Select a Date
           </Label>
