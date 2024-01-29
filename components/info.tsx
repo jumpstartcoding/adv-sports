@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom";
 function InfoPage() {
   return (
     <>
-      <Outlet />
       <section id="info-page">
         <article className="info">
           <h1 style={{ fontSize: "36pt", fontWeight: 800 }}>
@@ -36,6 +35,7 @@ function InfoPage() {
           </p>
         </article>
       </section>
+      <Outlet />
     </>
   );
 }
