@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Flex, Text, Input, Label } from "@aws-amplify/ui-react";
 import "../components/resForm.css";
+import { Link } from "react-router-dom";
 
 export const ResInput = () => {
   const [formData, setFormData] = useState({
@@ -56,6 +57,7 @@ export const ResInput = () => {
         setHide(true);
       } else {
         console.log("Error Submitting Reservation Form");
+        alert("Reservation not submitted");
       }
     } catch (e) {
       console.log("Error: ", e);
@@ -176,6 +178,13 @@ export const ResInput = () => {
       </>
     );
   else {
-    return <div>Thank You For Your Reserving with Adventure Sports</div>;
+    return (
+      <p className="container">
+        <h1>Thank you for choosing Adventure Sports for your reservation!</h1>
+        <Link style={{ color: "blue" }} to={"/"}>
+          <h2>Home Page</h2>
+        </Link>
+      </p>
+    );
   }
 };

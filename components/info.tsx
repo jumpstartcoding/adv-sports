@@ -1,11 +1,13 @@
 import "../components/info.css";
 import { Outlet } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 function InfoPage() {
   return (
     <>
+      <NavBar />
       <section id="info-page">
-        <article className="info">
+        <article className="info" style={{ marginTop: "50px" }}>
           <h1 style={{ fontSize: "36pt", fontWeight: 800 }}>
             Making Memories That Last A Lifetime
           </h1>
