@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Flex, Text, Input, Label } from "@aws-amplify/ui-react";
 import "../components/resForm.css";
 import { Link } from "react-router-dom";
@@ -11,6 +11,14 @@ export const ResInput = () => {
     time: "12:00 PM",
     date: "",
   });
+  useEffect(() => {
+    // Get the current date
+    const currentDate = new Date().toISOString().split("T")[0];
+    setFormData({
+      ...formData,
+      date: currentDate,
+    });
+  }, []);
 
   const [hide, setHide] = useState(false);
 
