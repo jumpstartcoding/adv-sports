@@ -187,12 +187,12 @@ export const ResInput = () => {
     );
   else {
     return (
-      <p className="container">
+      <div className="container">
         <h1>Thank you for choosing Adventure Sports for your reservation!</h1>
         <Link style={{ color: "blue" }} to={"/"}>
           <h2>Home Page</h2>
         </Link>
-      </p>
+      </div>
     );
   }
 };
