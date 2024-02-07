@@ -7,8 +7,9 @@ function displayTrips(props: {
   pageImage: string;
 }) {
   const title = useLocation();
-  const { state } = title;
-  const { name, val } = state;
+  var { state } = title;
+  var { name, val } = state;
+
   const oneDayTrips = {
     "Smithfield to the Delaware Water Gap":
       "Take a quick canoe or kayak trip down the Delaware River from the Smithfield Beach launch, down to the famous Delaware Water Gap. Rafts are available as well!",
