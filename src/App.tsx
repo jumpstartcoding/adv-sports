@@ -11,6 +11,8 @@ import { ReactNode } from "react";
 Amplify.configure(awsExports);
 
 function App({ children }: { children: ReactNode }) {
+  // Configure Amplify in index file or root file
+
   return (
     <>
       {children}

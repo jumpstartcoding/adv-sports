@@ -11,11 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@aws-amplify/ui-react": "^5.0.4",
+    "@aws-amplify/ui-react": "^5.3.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/x-date-pickers": "^6.18.3",
-    "aws-amplify": "^5.3.4",
+    "aws-amplify": "^5.3.15",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "date-fns": "^2.30.0",

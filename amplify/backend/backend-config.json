@@ -1,1 +1,136 @@
-{}
+{
+  "auth": {
+    "advreactbcdf6cac": {
+      "customAuth": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "advreactbcdf6cacDefineAuthChallenge",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "advreactbcdf6cacCreateAuthChallenge",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "advreactbcdf6cacVerifyAuthChallengeResponse",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "FAMILY_NAME",
+          "GIVEN_NAME"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL",
+          "PHONE_NUMBER"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "advreactbcdf6cacCreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "advreactbcdf6cacDefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "advreactbcdf6cacVerifyAuthChallengeResponse": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_advreactbcdf6cacCreateAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "advreactbcdf6cacCreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_advreactbcdf6cacCreateAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "advreactbcdf6cacCreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_advreactbcdf6cacDefineAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "advreactbcdf6cacDefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_advreactbcdf6cacDefineAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "advreactbcdf6cacDefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_advreactbcdf6cacVerifyAuthChallengeResponse_RECAPTCHASECRET": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "advreactbcdf6cacVerifyAuthChallengeResponse"
+        }
+      ]
+    },
+    "AMPLIFY_function_advreactbcdf6cacVerifyAuthChallengeResponse_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "advreactbcdf6cacVerifyAuthChallengeResponse"
+        }
+      ]
+    },
+    "AMPLIFY_function_advreactbcdf6cacVerifyAuthChallengeResponse_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "advreactbcdf6cacVerifyAuthChallengeResponse"
+        }
+      ]
+    }
+  }
+}
