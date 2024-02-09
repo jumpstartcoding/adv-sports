@@ -10,7 +10,6 @@ import {
   View,
   Text,
   Image,
-  AccountSettings,
 } from "@aws-amplify/ui-react";
 const components = {
   Header() {
